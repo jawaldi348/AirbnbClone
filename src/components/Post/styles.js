@@ -13,6 +13,10 @@ const styles = StyleSheet.create({
     bedrooms: {
         marginVertical: 10,
         color: '#5b5b5b'
+    },
+    description: {
+        fontSize: 18,
+        lineHeight: 26
     }
 });
 
