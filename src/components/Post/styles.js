@@ -28,6 +28,10 @@ const styles = StyleSheet.create({
     },
     price: {
         fontWeight: 'bold'
+    },
+    totalPrice: {
+        color: '#5b5b5b',
+        textDecorationLine: 'underline'
     }
 });
 

@@ -25,6 +25,9 @@ const Post = (props) => {
                 <Text style={styles.price}> $30 </Text>
                 / night
             </Text>
+
+            {/* Total price */}
+            <Text style={styles.totalPrice}>$230 total</Text>
         </View>
     );
 }
