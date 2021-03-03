@@ -9,6 +9,10 @@ const styles = StyleSheet.create({
         aspectRatio: 3 / 2,
         resizeMode: 'cover',
         borderRadius: 10
+    },
+    bedrooms: {
+        marginVertical: 10,
+        color: '#5b5b5b'
     }
 });
 
