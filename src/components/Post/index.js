@@ -18,6 +18,13 @@ const Post = (props) => {
             <Text style={styles.description} numberOfLines={2}>
                 Entire Flat. Puerto de la cruz lrmLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
             </Text>
+
+            {/* Old Price & new price */}
+            <Text style={styles.prices}>
+                <Text style={styles.oldPrice}>$36 </Text>
+                <Text style={styles.price}> $30 </Text>
+                / night
+            </Text>
         </View>
     );
 }
