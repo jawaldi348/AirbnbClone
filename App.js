@@ -15,6 +15,8 @@ import {
 import HomeScreen from './src/screens/Home';
 import Post from './src/components/Post';
 
+import feed from './assets/data/feed';
+
 const App: () => React$Node = () => {
   return (
     <>
