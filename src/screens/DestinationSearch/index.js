@@ -1,11 +1,20 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { useState } from 'react';
+import { View, TextInput } from 'react-native';
+import styles from './styles.js';
 
 const DestinationSearchScreen = (props) => {
 
+    const [inputText, setInputText] = useState('');
+
     return (
         <View>
-            <Text>noJust</Text>
+            {/* Input Component */}
+            <TextInput
+                style={styles.textInput}
+                placeholder="Where are you going?"
+                value={inputText}
+                onChangeText={setInputText}
+            />
         </View>
     );
 }
