@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, Pressable } from "react-native";
 
 import styles from './styles';
 
 const GuestsScreen = (props) => {
+
+    const [adults, setAdults] = useState(0);
+
     return (
         <View>
             <View style={styles.row}>
@@ -13,13 +16,13 @@ const GuestsScreen = (props) => {
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <Pressable
-                        onPress={() => console.warn('- clicked')}
+                        onPress={() => setAdults(Math.max(0, adults - 1))}
                         style={styles.button}>
                         <Text>-</Text>
                     </Pressable>
-                    <Text style={{ marginHorizontal: 20, fontSize: 16 }}>0</Text>
+                    <Text style={{ marginHorizontal: 20, fontSize: 16 }}>{adults}</Text>
                     <Pressable
-                        onPress={() => console.warn('+ clicked')}
+                        onPress={() => setAdults(Math.max(0, adults + 1))}
                         style={styles.button}>
                         <Text style={{ fontSize: 20, color: '#474747' }}>+</Text>
                     </Pressable>
